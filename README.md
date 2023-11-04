@@ -14,7 +14,7 @@ Before starting to use this app you must install some important python packages.
 
     cd app
 
-> **This command will run local server on port 8000 and 127.0.0.1 adress**
+> **This command will run local server on port 8000 and 127.0.0.1 address**
 
     py main.py
 
