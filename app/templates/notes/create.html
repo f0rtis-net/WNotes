@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='dist/css/output.css') }}">
+</head>
+<style>
+    .neumorphism-shadow {
+        box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.119), 5px 5px 10px rgba(0, 0, 0, 0.219);
+    }
+</style>
+
+<body class="bg-gray-600 flex flex-col justify-center items-center">
+<div class="text-white neumorphism-shadow mt-4 w-2/4">
+    <p class="font-extrabold m-4">Configurate note!</p>
+    <p class="font-extrabold m-4 text-red-700">{{reason}}</p>
+    <form action="" method="post" enctype=multipart/form-data class="m-4">
+        <div class="mb-6">
+            <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Note name</label>
+            <input type="text" name="title"
+                   class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                   placeholder="Start typing right now...">
+        </div>
+
+        <div class="mb-6">
+            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="user_avatar">Upload Image!</label>
+            <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                   aria-describedby="note_help" name="images" type="file">
+            <div class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="note_help">Not necessarily a field</div>
+        </div>
+
+        <div class="mb-6">
+            <label for="body" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">What's up?</label>
+            <textarea name="body" rows="4"
+                      class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      placeholder="Start typing right now..."></textarea>
+        </div>
+
+        <button type="submit"
+                class="neumorphism-shadow bg-cyan-600 flex items-center w-auto px-4 py-2 text-white transition-transform transform rounded-md hover:translate-x-1 focus:outline-none focus:ring">
+            Send
+        </button>
+    </form>
+    <div class="relative">
+        <a href="{{ url_for('index') }}" class="absolute right-4 bottom-4 neumorphism-shadow bg-cyan-600 flex items-center w-auto px-4 py-2 text-white transition-transform transform rounded-md hover:translate-x-1 focus:outline-none focus:ring">
+            Back to main
+        </a>
+    </div>
+</div>
+</body>
+</html>
