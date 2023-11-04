@@ -1,5 +1,5 @@
 # WNotes
-This application was created for my classmates to facilitate the process of finding and creating short important information.
+This application was created for my groupmates to facilitate the process of finding and creating short important information.
 
 #Installation
 
