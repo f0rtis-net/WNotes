@@ -19,4 +19,4 @@ Before starting to use this app you must install some important python packages.
     py main.py
 
 
-![Image of UI]([https://i.ibb.co/f4bPRsh/scanning.png](https://i.ibb.co/brf78v0/image.png))
+![Image of UI](https://i.ibb.co/brf78v0/image.png)
