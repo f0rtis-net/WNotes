@@ -1,7 +1,7 @@
 # WNotes
 This application was created for my groupmates to facilitate the process of finding and creating short important information.
 
-#Installation
+# Installation
 
 Before starting to use this app you must install some important python packages. You can install them one by use requirements.txt file.
 
