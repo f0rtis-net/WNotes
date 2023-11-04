@@ -3,7 +3,7 @@ This application was created for my groupmates to facilitate the process of find
 
 # Installation
 
-Before starting to use this app you must install some important python packages. You can install them one by use requirements.txt file.
+Before starting to use this app you must install some important python packages. You can install them by use requirements.txt file.
 
 ## Use requirements.txt
 
